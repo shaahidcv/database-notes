@@ -48,3 +48,20 @@ to show specific table
 
 to delete a table
 --> DROP TABLE table_name;
+
+
+table with constrains 
+--> CREATE TABLE table_name (id BIGSERIAL NOT NULL PRIMARY KEY ,name VARCHAR(50) NOT NULL, date_of_birth DATE );
+
+* BIGSERIAL = autoincrement by 1
+* NOT NULL  = field not be empty
+* UNIQUE    = values in the field must be UNIQUE.
+
+output: 
+
+Schema |       Name       |   Type   |  Owner
+--------+------------------+----------+----------
+ public | employees        | table    | postgres
+ public | employees_id_seq | sequence | postgres
+
+
