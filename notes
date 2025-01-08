@@ -6,3 +6,45 @@ SQL  and non SQL
 sql is structured query language, eg postgres mysql
 
 non sql is without query ans stores like objects. eg mongo db
+
+
+postgres: 
+relational database management system
+
+sql (ANSI - sandard)
+general purpose
+object-relational databases
+free and open sourced
+platform independednd
+very stable and minimum maintainance
+large storage
+extensible define own datatypes ,
+
+
+
+
+in cmd ---> to enter postgres 
+
+psql -U postgres 
+password
+
+
+to create a database 
+--> CREATE DATABASE database_name;
+
+to get into database 
+--> \c database_name
+
+table creation 
+--> CREATE TABLE table_name (fields);
+
+eg : CREATE TABLE work (id INT, name VARCHAR(50));
+
+to show tables in a database
+--> \d
+
+to show specific table
+--> \d table_name
+
+to delete a table
+--> DROP TABLE table_name;
