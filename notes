@@ -92,3 +92,26 @@ to add extra column:
 
 ALTER TABLE students ADD grades INT(NOT NULL);
 
+to update data or add new data:
+--> UPDATE table_name SET column_name = 'value' WHERE id IN (1,2,3);  
+
+here id uses to identify which column and in 1,2,3 s datas have being changed to value.ABORT
+
+to fetch data with condition:
+--> SELECT * FROM table_name WHERE gender = 'male';
+
+here WHERE keyword is used
+
+to add multiple condition 
+--> SELECT * FROM table_name WHERE gender = 'male' AND date_of_birth <= '1999-01-01";
+
+here uses AND keyword with WHERE keyword.ABORT
+
+we can use OR condition to fetch data when one of the condition is true.ABORT
+
+--> relational operators :
+>,<,>=,<=,
+
+we can use relational operators in conditions.
+
+
