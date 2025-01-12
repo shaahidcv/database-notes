@@ -64,4 +64,31 @@ Schema |       Name       |   Type   |  Owner
  public | employees        | table    | postgres
  public | employees_id_seq | sequence | postgres
 
+data insertion into tables:
+--> INSERT INTO table_name (column_name,,,,) VALUES (data,,,);
+
+INSERT INTO students(name,email) VALUES('shahid','shaahid@example.com')
+
+to see inserted data:
+--> SELECT * FROM table_name;
+
+to see specific data:
+--> SELECT name,email FROM students;
+
+
+list by order:
+--> SELECT * FROM table_name ORDER BY column_name_to_order_by ASC;
+
+ASC for asenting
+DESC decenting ORDER
+
+
+to avoid repeatation or duplicates when showing data:
+--> SELECT DISTINCT column_name FROM table_name;
+
+
+to add extra column:
+--> ALTER TABLE table_name ADD column_name datatype(constrains);
+
+ALTER TABLE students ADD grades INT(NOT NULL);
 
