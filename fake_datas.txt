@@ -1,0 +1,24 @@
+DROP TABLE IF EXISTS `myTable`;
+
+CREATE TABLE `myTable` (
+  `id` mediumint(8) unsigned NOT NULL auto_increment,
+  `name` varchar(255) default NULL,
+  `email` varchar(255) default NULL,
+  `date_of_birth` varchar(255),
+  `gender` TEXT default NULL,
+  `region` varchar(50) default NULL,
+  PRIMARY KEY (`id`)
+) AUTO_INCREMENT=1;
+
+INSERT INTO `myTable` (`name`,`email`,`date_of_birth`,`gender`,`region`)
+VALUES
+  ("Grady Berg","orci.sem.eget@google.com","1998-05-03","male","Nagaland"),
+  ("Tashya Cantrell","a@google.com","2000-45-14","male","Tamil Nadu"),
+  ("Castor Bolton","erat@yahoo.com","1999-03-01","male","Mizoram"),
+  ("Cadman Browning","et.euismod.et@icloud.com","1995-06-01","","Chhattisgarh"),
+  ("Jackson Hendricks","neque.sed@google.ca","1997-52-21","male","Mizoram"),
+  ("Geoffrey Moses","consectetuer.adipiscing@google.com","2002-25-04","","Rajasthan"),
+  ("Rashad Webster","magna.et@icloud.org","2003-39-03","male","Manipur"),
+  ("Herrod Bowman","egestas.ligula.nullam@google.net","2001-31-06","male","Pondicherry"),
+  ("Rylee Perry","rutrum.lorem@outlook.com","2002-13-21","male","Lakshadweep"),
+  ("Sybil Glass","libero.integer@yahoo.org","1996-37-25","male","Mizoram");
