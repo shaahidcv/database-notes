@@ -114,4 +114,38 @@ we can use OR condition to fetch data when one of the condition is true.ABORT
 
 we can use relational operators in conditions.
 
+limit / fetch keyword .
+
+for exmaple it is uses to get first 5 datas or starting from id 5 and get next 5 datas.
+
+limit keyword to retrive datas of given limit.ABORT
+--> SELECT * FROM table_name LIMIT 5;
+
+OFFSET:
+--> SELECT * FROM table_name OFFSET 5 LIMIT 5;
+
+here starts from 5 and get next 5 data.
+
+we can also use FETCH do the same in this way:
+--> SELECT * FROM table_name OFFSET 5 FETCH FIRST 5 ROWS ONLY;
+
+IN keyword (from a list):
+
+to get data of specific column using their values 
+for example:
+SELECT * FROM students WHERE name IN ('John', 'Alice', 'Bob');
+Find all students whose names are "John", "Alice", or "Bob":
+
+BETWEEN keyword:
+--> SELECT * FROM table_name WHERE column_name BETWEEN 'value1' AND 'value2';
+
+LIKE and iLIKE :
+used to get specific pattern type
+
+--> SELECT * FROM table_name WHERE column_name LIKE '%a';
+
+'%a' = it means ends with a . for example in column name it gets names thats ends with a.
+'a%' =  means starts with a. 
+
+iLIKE is used when it comes to case senstive. 
 
