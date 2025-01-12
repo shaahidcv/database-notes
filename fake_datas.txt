@@ -22,3 +22,34 @@ VALUES
   ("Herrod Bowman","egestas.ligula.nullam@google.net","2001-31-06","male","Pondicherry"),
   ("Rylee Perry","rutrum.lorem@outlook.com","2002-13-21","male","Lakshadweep"),
   ("Sybil Glass","libero.integer@yahoo.org","1996-37-25","male","Mizoram");
+
+
+
+
+
+
+new datas with 3 fields and constrains:
+
+
+DROP TABLE IF EXISTS `myTable`;
+
+CREATE TABLE `myTable` (
+  `id` mediumint(8) unsigned NOT NULL auto_increment,
+  `name` varchar(255) default NULL,
+  `email` varchar(255) default NULL,
+  `region` varchar(50) default NULL,
+  PRIMARY KEY (`id`)
+) AUTO_INCREMENT=1;
+
+INSERT INTO `myTable` (`name`,`email`,`region`)
+VALUES
+  ("Geraldine Kidd","ut@google.com","Canarias"),
+  ("Yvette Odom","ultricies.ornare.elit@aol.ca","Valparaíso"),
+  ("Dana Bishop","integer.in.magna@hotmail.edu","Puglia"),
+  ("Yasir Jackson","eros.nec@yahoo.ca","Pomorskie"),
+  ("Aiko Sweet","magna@protonmail.couk","Flevoland"),
+  ("Henry Green","iaculis.odio.nam@yahoo.ca","Maule"),
+  ("Gisela Baxter","eu@icloud.com","Northwest Territories"),
+  ("Jade Roberson","mus@hotmail.couk","Centre"),
+  ("Ivana Marquez","sed@yahoo.com","Yucatán"),
+  ("Kelsie Michael","iaculis.enim@google.com","Cajamarca");
