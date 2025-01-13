@@ -188,3 +188,20 @@ is to give a name to column or a field.
 AS keyword 
 - SELECT id,name,mark,total(mark::float/total)*100 AS percentage FROM students;
 
+COALESCE :
+
+-  IT is used to give default value if the rows are empty.
+
+- SELECT id,name,mark,COALESCE(email, 'default value') FROM students;
+
+DATE FUNCTION :
+
+- SELECT NOW()::DATE;  //for date.
+- SELECT NOW()::TIME;  //for time.
+- SELECT EXTRACT (year FROM NOW()); // can extract month,day,century.
+
+to add years or anything :
+
+SELECT NOW() + INTERVAL '10 YEARS';
+
+
