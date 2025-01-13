@@ -247,3 +247,46 @@ EXCLUDED: Refers to the values provided in the INSERT statement that caused the 
 
 INSERT INTO students (name, mark)VALUES ('Alice', 85)ON CONFLICT (name)DO NOTHING;
 
+FOREIGN KEY:
+- A foreign key is a column (or a group of columns) in a table that establishes a link between data in two tables. It ensures referential integrity, meaning the values in the foreign key column must match values in the referenced tables primary key or unique column.
+To enforce relationships between tables.
+
+JOINS:
+to combine 2 tables.
+
+- CREATE TABLE table_name (
+    column_name data_type CONSTRAINT constraint_name REFERENCES parent_table (parent_column)
+);
+
+
+- ALTER TABLE table_name ADD CONSTRAINT constraint_name FOREIGN KEY (column_name) REFERENCES parent_table (parent_column);
+
+eg:
+
+CREATE TABLE departments (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE employees (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    department_id INT,
+    CONSTRAINT fk_department FOREIGN KEY (department_id) REFERENCES departments (id)
+);
+
+
+- ALTER TABLE employees ADD CONSTRAINT fk_department FOREIGN KEY (department_id) REFERENCES departments (id);
+
+INNER JOIN:
+combine data, to fetch matching data from 2 tables. 
+
+- SELECT column_names FROM table1 INNER JOIN table2 ON table1.column_name = table2.column_name;
+
+EG: 
+- SELECT employees.name AS employee_name, departments.department_name FROM employees INNER JOIN departments ON employees.department_id =departments.id;
+
+
+
+
+
