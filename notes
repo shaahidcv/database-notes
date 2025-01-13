@@ -205,3 +205,23 @@ to add years or anything :
 SELECT NOW() + INTERVAL '10 YEARS';
 
 
+CONSTRAINS :
+1- NOT NULL
+2- UNIQUE
+3- PRIMARY KEY
+4- FOREIGN KEY - TO RELATE 2 TABLES.
+5- CHECK
+6- DEFAULT
+
+define CONSTRAINS:
+
+can apply constrains in 2 ways
+
+> on creation:
+CREATE TABLE table_name (id INT PRIMARY KEY , name VARCHAR(100) NOT NULL, gender VARCHAR(10) CHECK(gender='male' or gender='female'));
+
+> after creation:
+- ALTER TABLE table_name ADD CONSTRAINT name  PRIMARY KEY(id);
+- ALTER TABLE table_name ALTER COLUMN name SET NOT NULL;
+
+
