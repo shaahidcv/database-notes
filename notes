@@ -149,3 +149,27 @@ used to get specific pattern type
 
 iLIKE is used when it comes to case senstive. 
 
+
+GROUP BY 
+
+- use with aggrigate functions
+- use to group 
+
+-  SELECT column1, column2, aggregate_function(column3) FROM table_name GROUP BY column1, column2;
+
+aggrigate functions are :
+
+COUNT()
+SUM()
+AVG()
+MAX()
+MIN()
+
+- SELECT place,COUNT(*) FROM employees GROUP BY place ;
+- can put a ORDER BY in the end.
+
+HAVING :
+checking condition and retrive data.
+
+- SELECT place,COUNT(*) FROM employees GROUP BY place HAVING COUNT(*) > 1 ORDER BY place;
+
