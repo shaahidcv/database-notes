@@ -225,3 +225,25 @@ CREATE TABLE table_name (id INT PRIMARY KEY , name VARCHAR(100) NOT NULL, gender
 - ALTER TABLE table_name ALTER COLUMN name SET NOT NULL;
 
 
+DELETE:
+
+to delete a record. 
+- DELETE FROM table_name WHERE id=1;
+
+- DELETE FROM table_name ;  // to delete all record. 
+
+HANDLE CONFLICTS. UPSERT QUERY.
+like primary key duplication.
+
+handling conflicts during an INSERT operation is made easy with the UPSERT feature, which combines INSERT and UPDATE in a single query. This is done using the ON CONFLICT clause.
+
+- INSERT INTO table_name (columns) VALUES (values) ON CONFLICT (conflict_target) DO UPDATE SET column1 = value1, column2 = value2;
+
+-INSERT INTO students (name, mark) VALUES ('Alice', 85) ON CONFLICT (name) DO UPDATE SET mark = EXCLUDED.mark;
+EXCLUDED: Refers to the values provided in the INSERT statement that caused the conflict.
+
+
+- If you want to ignore the insert in case of a conflict:
+
+INSERT INTO students (name, mark)VALUES ('Alice', 85)ON CONFLICT (name)DO NOTHING;
+
