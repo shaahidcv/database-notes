@@ -1,0 +1,85 @@
+### **Database Questions for Theory and Practical**
+
+---
+
+### **Theory Questions**
+
+#### **Basic Questions**
+1. What is a database? How is it different from a file system?
+2. Explain the ACID properties in databases.
+3. What are the different types of database models?
+4. Define primary key, foreign key, and unique key. Give examples.
+5. Explain normalization and its types (1NF, 2NF, 3NF, BCNF).
+6. What are constraints in SQL? List the types with examples.
+7. Differentiate between SQL and NoSQL databases.
+8. Explain the concept of a relational database.
+9. What is the purpose of indexing in a database? What are the types of indexes?
+10. Define and explain views. How are they different from tables?
+
+---
+
+#### **Intermediate Questions**
+1. Explain joins in SQL with examples (INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL OUTER JOIN).
+2. What is the difference between clustered and non-clustered indexes?
+3. Explain the concept of stored procedures and triggers.
+4. What are transactions in a database? How do you implement them in SQL?
+5. What is a subquery? Differentiate between correlated and non-correlated subqueries.
+6. Explain database locking and types of locks (shared, exclusive).
+7. What is the difference between DELETE, TRUNCATE, and DROP commands?
+8. How does a UNION differ from a UNION ALL?
+9. What are database schemas? Explain their purpose.
+10. Discuss data integrity and its types.
+
+---
+
+#### **Advanced Questions**
+1. What are the differences between OLTP and OLAP?
+2. Explain database replication and its types.
+3. What is a deadlock? How can it be avoided in a database?
+4. Explain the concept of database sharding.
+5. How is data security maintained in databases? Discuss encryption and user roles.
+6. What are materialized views? How are they used?
+7. Explain the concept of JSON/JSONB in PostgreSQL and its advantages.
+8. What are window functions in SQL? Provide examples.
+9. Discuss the importance of query optimization.
+10. Explain the CAP theorem in distributed databases.
+
+---
+
+### **Practical Questions**
+
+#### **Basic**
+1. Create a database and a table for managing employee records (name, email, date of birth, gender).
+2. Insert, update, delete, and retrieve data using SQL queries.
+3. Write a query to retrieve records with a specific condition (e.g., age greater than 30).
+4. Use `GROUP BY` and `HAVING` clauses to categorize data.
+5. Create and use a simple view.
+
+---
+
+#### **Intermediate**
+1. Write a query to join two tables (e.g., employees and departments) using INNER JOIN.
+2. Implement a stored procedure for calculating and updating employee bonuses.
+3. Create triggers for auditing changes in a table.
+4. Write a query to calculate the percentage of marks for students and categorize them into grades.
+5. Create an index on a table and measure its impact on query performance.
+
+---
+
+#### **Advanced**
+1. Design and normalize a database for a library management system.
+2. Write a query using window functions to calculate running totals or rank students based on their scores.
+3. Implement database transactions for a banking system (e.g., transfer funds).
+4. Create a JSON field in a table and write queries to extract specific JSON values.
+5. Implement foreign key constraints and demonstrate cascading delete and update behaviors.
+
+---
+
+### **General Questions**
+1. Write SQL queries for data aggregation using `COUNT`, `SUM`, `AVG`, `MIN`, and `MAX`.
+2. Demonstrate how to handle duplicate records in a table.
+3. Write an `UPSERT` query to handle conflicts during insertion.
+4. Use `CASE` statements to derive custom columns based on conditions.
+5. Create a table with appropriate constraints and explain their roles.
+
+---
