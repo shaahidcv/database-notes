@@ -49,11 +49,11 @@
 ### **Practical Questions**
 
 #### **Basic**
-1. Create a database and a table for managing employee records (name, email, date of birth, gender).
-2. Insert, update, delete, and retrieve data using SQL queries.
-3. Write a query to retrieve records with a specific condition (e.g., age greater than 30).
-4. Use `GROUP BY` and `HAVING` clauses to categorize data.
-5. Create and use a simple view.
+1. Create a database and a table for managing employee records (name, email, date of birth, gender).  ✅
+2. Insert, update, delete, and retrieve data using SQL queries.  ✅
+3. Write a query to retrieve records with a specific condition (e.g., age greater than 30). ✅
+4. Use `GROUP BY` and `HAVING` clauses to categorize data.  ✅
+5. Create and use a simple view. ✅
 
 ---
 
