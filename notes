@@ -288,5 +288,56 @@ EG:
 
 
 
+LEFT JOIN:
+
+- A LEFT JOIN in SQL retrieves all rows from the left table and the matching rows from the right table. If there is no match in the right table, the result will still include the row from the left table, but with NULL values for the columns from the right table.
+
+- SELECT column_names FROM table1 LEFT JOIN table2 ON table1.column_name = table2.column_name;
+
+RIGHT JOIN:
+
+- A RIGHT JOIN in SQL retrieves all rows from the right table and the matching rows from the left table. If there is no match in the left table, the result will still include the row from the right table, but with NULL values for the columns from the left table.
+
+- SELECT column_names FROM table1 RIGHT JOIN table2 ON table1.column_name = table2.column_name;
 
 
+FULL OUTER JOIN:
+
+-A FULL OUTER JOIN combines the results of both a LEFT JOIN and a RIGHT JOIN. It retrieves:
+
+All rows from the left table, even if there is no match in the right table.
+All rows from the right table, even if there is no match in the left table.
+For rows without a match, the missing side will have NULL values.
+
+- SELECT column_names FROM table1 FULL OUTER JOIN table2 ON table1.column_name = table2.column_name;
+
+UNION:
+
+-The UNION operator in SQL is used to combine the result sets of two or more SELECT statements into a single result set. By default, it removes duplicate rows from the combined result.
+
+Key Rules for UNION:
+
+- Same Number of Columns: The SELECT statements must have the same number of columns.
+- Compatible Data Types: The data types of the columns must be compatible.
+- Column Order: The columns in the result set are based on the first SELECT statement.
+
+-  SELECT column_names FROM table1 UNION SELECT column_names FROM table2;
+
+To include duplicates in the result, use UNION ALL:
+
+- SELECT column_names FROM table1 UNION ALL SELECT column_names FROM table2;
+
+CASE:
+
+- The CASE statement in SQL is used to create conditional logic in queries. It acts like an "if-then-else" structure, allowing you to evaluate conditions and return specific values based on those conditions.
+
+- SELECT name, marks, CASE 
+        WHEN marks >= 90 THEN 'A+'
+        WHEN marks >= 80 THEN 'A'
+        WHEN marks >= 70 THEN 'B+'
+        WHEN marks >= 60 THEN 'B'
+        WHEN marks >= 50 THEN 'C'
+        WHEN marks >= 40 THEN 'D'
+        ELSE 'F'
+    END AS grade
+FROM students;
