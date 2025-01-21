@@ -1,0 +1,48 @@
+Here are two database topics that you might have missed:  
+
+---
+
+### 1. **Candidate Key**
+- **Definition**: A **candidate key** is a minimal set of attributes that uniquely identifies a tuple (row) in a relation (table).  
+- **Key Points**:
+  - A table can have multiple candidate keys.
+  - One of the candidate keys is chosen as the **primary key**.
+  - Example:  
+    Consider a table `Student` with columns `StudentID`, `Email`, and `PhoneNumber`.  
+    - Candidate Keys: `{StudentID}`, `{Email}`, `{PhoneNumber}` (assuming all are unique).  
+    - Primary Key: `{StudentID}` (chosen for uniqueness).  
+- **Why Important?**: Candidate keys help ensure data integrity by preventing duplicate entries.  
+
+---
+
+### 2. **Normalization and Denormalization**
+- **Normalization**: The process of organizing data in a database to reduce redundancy and improve data integrity.  
+  - **Normal Forms**:
+    - **1NF (First Normal Form)**: Eliminate duplicate columns and ensure atomic values.
+    - **2NF (Second Normal Form)**: Ensure all non-key attributes are fully dependent on the primary key.
+    - **3NF (Third Normal Form)**: Eliminate transitive dependency.
+    - **BCNF (Boyce-Codd Normal Form)**: A stricter form of 3NF.  
+  - **Example**:
+    ```plaintext
+    Unnormalized Table:
+    Student | Courses
+    -----------------
+    John    | Math, Science
+    
+    1NF (Atomic Values):
+    Student | Course
+    -----------------
+    John    | Math
+    John    | Science
+    ```
+  
+- **Denormalization**: The process of combining tables to improve read performance, often at the cost of redundancy.  
+  - **Use Case**: Optimizing for speed in data retrieval for reporting systems.
+
+---
+
+### How These Topics Enhance Knowledge
+1. **Candidate Key**: Deepens understanding of database schema design and ensures proper indexing for performance.  
+2. **Normalization**: Teaches efficient database structure, while **Denormalization** shows trade-offs for real-world applications.  
+
+Would you like detailed examples or exercises for these concepts?

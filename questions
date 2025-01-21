@@ -58,11 +58,11 @@
 ---
 
 #### **Intermediate**
-1. Write a query to join two tables (e.g., employees and departments) using INNER JOIN.
-2. Implement a stored procedure for calculating and updating employee bonuses.
-3. Create triggers for auditing changes in a table.
-4. Write a query to calculate the percentage of marks for students and categorize them into grades.
-5. Create an index on a table and measure its impact on query performance.
+1. Write a query to join two tables (e.g., employees and departments) using INNER JOIN.  ✅
+2. Implement a stored procedure for calculating and updating employee bonuses. ❌
+3. Create triggers for auditing changes in a table.  ❌
+4. Write a query to calculate the percentage of marks for students and categorize them into grades. ✅
+5. Create an index on a table and measure its impact on query performance.❌
 
 ---
 
