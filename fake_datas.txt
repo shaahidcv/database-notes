@@ -1,4 +1,4 @@
-                       DROP TABLE IF EXISTS `myTable`;
+                        DROP TABLE IF EXISTS `myTable`;
 
 CREATE TABLE `myTable` (
   `id` mediumint(8) unsigned NOT NULL auto_increment,
