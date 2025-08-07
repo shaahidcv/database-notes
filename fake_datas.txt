@@ -1,5 +1,5 @@
                                    DROP TABLE IF EXISTS `myTable`;
-
+ 
 CREATE TABLE `myTable` (
   `id` mediumint(8) unsigned NOT NULL auto_increment,
   `name` varchar(255) default NULL,
